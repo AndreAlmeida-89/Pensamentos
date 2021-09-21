@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFd-Dg-xsi">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFd-Dg-xsi">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,13 +12,13 @@
         <!--Pensamentos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pensamentos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuotesViewController" customModule="Pensamentos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-7T-6fE">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-1q-ZKl">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
@@ -29,19 +30,19 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pc0-A8-Ajn">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="367.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="380"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pc0-A8-Ajn" secondAttribute="height" multiplier="750:666" id="rvn-cU-AaZ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensamento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pbt-g7-2Jw">
-                                <rect key="frame" x="40" y="377.5" width="334" height="48"/>
+                                <rect key="frame" x="40" y="390" width="348" height="47.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYS-gd-qww">
-                                <rect key="frame" x="182" y="445.5" width="50" height="36"/>
+                                <rect key="frame" x="189" y="457.66666666666669" width="50" height="36"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
                                 <color key="textColor" red="0.75294117647058822" green="0.37647058823529411" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -66,6 +67,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pensamentos" selectedImage="quotes" id="L9u-oq-vk0"/>
+                    <connections>
+                        <outlet property="ctTop" destination="TYM-A1-M49" id="D4b-UN-px4"/>
+                        <outlet property="ivPhoto" destination="pc0-A8-Ajn" id="bsk-je-7fR"/>
+                        <outlet property="ivPhotoBg" destination="Bm3-7T-6fE" id="PSN-Vq-BA2"/>
+                        <outlet property="lbAuthor" destination="cYS-gd-qww" id="UhG-mH-Ree"/>
+                        <outlet property="lbQuote" destination="Pbt-g7-2Jw" id="wNx-7D-5tS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,46 +82,52 @@
         <!--Configurações-->
         <scene sceneID="cWp-db-Fz9">
             <objects>
-                <viewController id="bJK-wx-y08" sceneMemberID="viewController">
+                <viewController id="bJK-wx-y08" customClass="SettingsViewController" customModule="Pensamentos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3oT-aj-nMg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mudar automaticamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DP-Bj-kHl">
-                                <rect key="frame" x="116" y="56" width="182" height="21"/>
+                                <rect key="frame" x="123" y="56" width="182" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gif-I4-Uyb">
-                                <rect key="frame" x="182.5" y="85" width="51" height="31"/>
+                                <rect key="frame" x="189.66666666666666" y="85" width="51" height="31"/>
                                 <color key="onTintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeAutoRefresh:" destination="bJK-wx-y08" eventType="valueChanged" id="GqI-te-tnm"/>
+                                </connections>
                             </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgK-BV-wQY">
-                                <rect key="frame" x="0.0" y="132" width="414" height="1"/>
+                                <rect key="frame" x="0.0" y="132" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="akE-kK-Yom"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yW-jR-ne2">
-                                <rect key="frame" x="24" y="172.5" width="10" height="21"/>
+                                <rect key="frame" x="24" y="172.66666666666666" width="10" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="5" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="ufW-H7-6DM">
-                                <rect key="frame" x="42" y="168" width="320" height="31"/>
+                                <rect key="frame" x="42" y="168" width="334" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeTimeInterval:" destination="bJK-wx-y08" eventType="valueChanged" id="n1i-6W-XHM"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alQ-sJ-eSJ">
-                                <rect key="frame" x="370" y="172.5" width="20" height="21"/>
+                                <rect key="frame" x="384" y="172.66666666666666" width="20" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tN7-IY-4jj">
-                                <rect key="frame" x="0.0" y="214" width="414" height="1"/>
+                                <rect key="frame" x="0.0" y="214" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Jmg-ev-PMl"/>
@@ -121,27 +135,30 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esquema de cores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eE9-TX-U1t">
-                                <rect key="frame" x="138" y="231" width="138" height="21"/>
+                                <rect key="frame" x="145" y="231" width="138" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-Bb-h5W">
-                                <rect key="frame" x="24" y="264" width="366" height="32"/>
+                                <rect key="frame" x="24" y="264" width="380" height="32"/>
                                 <segments>
                                     <segment title="Claro"/>
                                     <segment title="Escuro"/>
                                 </segments>
                                 <color key="tintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeColorScheme:" destination="bJK-wx-y08" eventType="valueChanged" id="HXu-pC-n3G"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obs.: Para mudar de pensamento, basta tocar em qualquer lugar da tela &quot;Pensamentos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASh-rd-WDu">
-                                <rect key="frame" x="24" y="742" width="366" height="41"/>
+                                <rect key="frame" x="24" y="772.33333333333337" width="380" height="40.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mudar após 8 segundos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaZ-Nh-faL">
-                                <rect key="frame" x="117" y="141" width="180.5" height="21"/>
+                                <rect key="frame" x="123.66666666666667" y="141" width="180.66666666666663" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -180,6 +197,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="xqN-dg-VWi"/>
+                    <connections>
+                        <outlet property="csColorScheme" destination="d2k-Bb-h5W" id="p6c-vI-X7e"/>
+                        <outlet property="lbTimeInterval" destination="eaZ-Nh-faL" id="a2K-oD-RYk"/>
+                        <outlet property="slTimeInterval" destination="ufW-H7-6DM" id="crv-7w-437"/>
+                        <outlet property="swAutoRefresh" destination="gif-I4-Uyb" id="Cfh-8D-liG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0w-HC-TTq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,6 +214,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xFd-Dg-xsi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="68N-og-OIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
