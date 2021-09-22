@@ -17,4 +17,8 @@ class QuotesManager {
         let decoder = JSONDecoder()
         quotes = try! decoder.decode([Quote].self, from: jsonData)
     }
+    
+    var randomQuote: Quote {
+        quotes.randomElement()!
+    }
 }

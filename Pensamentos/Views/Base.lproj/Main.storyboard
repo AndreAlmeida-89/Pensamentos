@@ -17,14 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-7T-6fE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-7T-6fE">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-1q-ZKl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-1q-ZKl">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="843"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rMS-8Y-fcx">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="843"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="light"/>
@@ -35,13 +34,13 @@
                                     <constraint firstAttribute="width" secondItem="pc0-A8-Ajn" secondAttribute="height" multiplier="750:666" id="rvn-cU-AaZ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensamento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pbt-g7-2Jw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Pensamento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pbt-g7-2Jw">
                                 <rect key="frame" x="40" y="390" width="348" height="47.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYS-gd-qww">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Autor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYS-gd-qww">
                                 <rect key="frame" x="189" y="457.66666666666669" width="50" height="36"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
                                 <color key="textColor" red="0.75294117647058822" green="0.37647058823529411" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,16 +51,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pc0-A8-Ajn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5sh-jV-ypN"/>
+                            <constraint firstAttribute="bottom" secondItem="Bm3-7T-6fE" secondAttribute="bottom" id="8Jn-Mv-uhx"/>
                             <constraint firstItem="cYS-gd-qww" firstAttribute="top" secondItem="Pbt-g7-2Jw" secondAttribute="bottom" constant="20" id="9mo-2e-1v7"/>
                             <constraint firstItem="Pbt-g7-2Jw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HSC-6G-3ls"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h7O-1q-ZKl" secondAttribute="bottom" id="PYT-KD-CtZ"/>
                             <constraint firstItem="Pbt-g7-2Jw" firstAttribute="top" secondItem="pc0-A8-Ajn" secondAttribute="bottom" constant="10" id="TYM-A1-M49"/>
                             <constraint firstItem="Bm3-7T-6fE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U8z-ZJ-SHR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cYS-gd-qww" secondAttribute="bottom" constant="40" id="VSi-oQ-S9K"/>
+                            <constraint firstItem="h7O-1q-ZKl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bUM-DL-Yc2"/>
                             <constraint firstItem="pc0-A8-Ajn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dh1-if-UOS"/>
                             <constraint firstItem="cYS-gd-qww" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJx-Qd-q5t"/>
-                            <constraint firstAttribute="bottom" secondItem="Bm3-7T-6fE" secondAttribute="bottom" id="iFA-hb-gPm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pbt-g7-2Jw" secondAttribute="trailing" constant="40" id="jO3-sJ-chY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h7O-1q-ZKl" secondAttribute="trailing" id="nPB-oQ-N3D"/>
                             <constraint firstItem="pc0-A8-Ajn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qlN-eD-r7F"/>
+                            <constraint firstItem="h7O-1q-ZKl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v3l-L7-dcD"/>
                             <constraint firstItem="Bm3-7T-6fE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vKP-gk-8wH"/>
                             <constraint firstItem="Bm3-7T-6fE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z8D-dq-pv9"/>
                         </constraints>
@@ -93,7 +96,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gif-I4-Uyb">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gif-I4-Uyb">
                                 <rect key="frame" x="189.66666666666666" y="85" width="51" height="31"/>
                                 <color key="onTintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>

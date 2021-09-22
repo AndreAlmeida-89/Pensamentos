@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E42D07126FB655D00A4DCA2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E42D07026FB655D00A4DCA2 /* Settings.bundle */; };
 		2EE08BF826F8D76000035469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE08BF726F8D76000035469 /* AppDelegate.swift */; };
 		2EE08BFA26F8D76000035469 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE08BF926F8D76000035469 /* SceneDelegate.swift */; };
 		2EE08BFF26F8D76000035469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE08BFD26F8D76000035469 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E42D07026FB655D00A4DCA2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2EE08BF426F8D76000035469 /* Pensamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pensamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE08BF726F8D76000035469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EE08BF926F8D76000035469 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				2EE08C0526F8D76100035469 /* Info.plist */,
 				2EE08BF926F8D76000035469 /* SceneDelegate.swift */,
 				2EE08BF726F8D76000035469 /* AppDelegate.swift */,
+				2E42D07026FB655D00A4DCA2 /* Settings.bundle */,
 			);
 			path = Pensamentos;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				2EF0213126FA0E9200F22E8B /* quotes.json in Resources */,
 				2EE08C0126F8D76100035469 /* Assets.xcassets in Resources */,
 				2EE08BFF26F8D76000035469 /* Main.storyboard in Resources */,
+				2E42D07126FB655D00A4DCA2 /* Settings.bundle in Resources */,
 				2EF0212F26FA0E8300F22E8B /* Savoye LET.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
