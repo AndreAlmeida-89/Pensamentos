@@ -22,6 +22,12 @@ class QuotesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("Refresh"),
+                                               object: nil,
+                                               queue: nil) { nitification in
+            self.formatView()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

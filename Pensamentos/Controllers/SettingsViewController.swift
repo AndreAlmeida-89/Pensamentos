@@ -19,7 +19,11 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("Refresh"),
+                                               object: nil,
+                                               queue: nil) { nitification in
+            self.formartView()
+        }
        
     }
     
